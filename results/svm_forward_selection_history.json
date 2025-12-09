@@ -1,0 +1,114 @@
+[
+  {
+    "n_features": 1,
+    "score": 0.6588137116506682,
+    "selected_indices": [
+      15
+    ],
+    "selected_names": [
+      "Audio_wav_entropy"
+    ]
+  },
+  {
+    "n_features": 2,
+    "score": 0.8191806052564565,
+    "selected_indices": [
+      15,
+      89
+    ],
+    "selected_names": [
+      "Audio_wav_entropy",
+      "Voltage_FFT_highest_amp_area_1000_2000"
+    ]
+  },
+  {
+    "n_features": 3,
+    "score": 0.905139876463406,
+    "selected_indices": [
+      15,
+      89,
+      22
+    ],
+    "selected_names": [
+      "Audio_wav_entropy",
+      "Voltage_FFT_highest_amp_area_1000_2000",
+      "Audio_peak_100_150_Hz"
+    ]
+  },
+  {
+    "n_features": 4,
+    "score": 0.9309999877143842,
+    "selected_indices": [
+      15,
+      89,
+      22,
+      21
+    ],
+    "selected_names": [
+      "Audio_wav_entropy",
+      "Voltage_FFT_highest_amp_area_1000_2000",
+      "Audio_peak_100_150_Hz",
+      "Audio_peak_50_100_Hz"
+    ]
+  },
+  {
+    "n_features": 5,
+    "score": 0.9497394835127034,
+    "selected_indices": [
+      15,
+      89,
+      22,
+      21,
+      2
+    ],
+    "selected_names": [
+      "Audio_wav_entropy",
+      "Voltage_FFT_highest_amp_area_1000_2000",
+      "Audio_peak_100_150_Hz",
+      "Audio_peak_50_100_Hz",
+      "Audio_ptp_amplitude"
+    ]
+  },
+  {
+    "n_features": 6,
+    "score": 0.9556626861270825,
+    "selected_indices": [
+      15,
+      89,
+      22,
+      21,
+      2,
+      10
+    ],
+    "selected_names": [
+      "Audio_wav_entropy",
+      "Voltage_FFT_highest_amp_area_1000_2000",
+      "Audio_peak_100_150_Hz",
+      "Audio_peak_50_100_Hz",
+      "Audio_ptp_amplitude",
+      "Audio_top_peak_mean"
+    ]
+  },
+  {
+    "n_features": 7,
+    "score": 0.9622639933166249,
+    "selected_indices": [
+      15,
+      89,
+      22,
+      21,
+      2,
+      10,
+      3
+    ],
+    "selected_names": [
+      "Audio_wav_entropy",
+      "Voltage_FFT_highest_amp_area_1000_2000",
+      "Audio_peak_100_150_Hz",
+      "Audio_peak_50_100_Hz",
+      "Audio_ptp_amplitude",
+      "Audio_top_peak_mean",
+      "Audio_skewness"
+    ]
+  }
+]

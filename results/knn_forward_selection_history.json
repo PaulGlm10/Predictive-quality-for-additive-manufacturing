@@ -1,0 +1,92 @@
+[
+  {
+    "n_features": 1,
+    "score": 0.6875769852782236,
+    "selected_indices": [
+      26
+    ],
+    "selected_names": [
+      "Audio_freq_peak_0_250_Hz"
+    ]
+  },
+  {
+    "n_features": 2,
+    "score": 0.817054244774833,
+    "selected_indices": [
+      26,
+      36
+    ],
+    "selected_names": [
+      "Audio_freq_peak_0_250_Hz",
+      "Resistance_Std"
+    ]
+  },
+  {
+    "n_features": 3,
+    "score": 0.8787706729115399,
+    "selected_indices": [
+      26,
+      36,
+      22
+    ],
+    "selected_names": [
+      "Audio_freq_peak_0_250_Hz",
+      "Resistance_Std",
+      "Audio_peak_100_150_Hz"
+    ]
+  },
+  {
+    "n_features": 4,
+    "score": 0.9242327680059879,
+    "selected_indices": [
+      26,
+      36,
+      22,
+      93
+    ],
+    "selected_names": [
+      "Audio_freq_peak_0_250_Hz",
+      "Resistance_Std",
+      "Audio_peak_100_150_Hz",
+      "Voltage_FFT_bandpower_area_1000_2000"
+    ]
+  },
+  {
+    "n_features": 5,
+    "score": 0.9296884651296417,
+    "selected_indices": [
+      26,
+      36,
+      22,
+      93,
+      13
+    ],
+    "selected_names": [
+      "Audio_freq_peak_0_250_Hz",
+      "Resistance_Std",
+      "Audio_peak_100_150_Hz",
+      "Voltage_FFT_bandpower_area_1000_2000",
+      "Audio_stft_max"
+    ]
+  },
+  {
+    "n_features": 6,
+    "score": 0.9507002801120448,
+    "selected_indices": [
+      26,
+      36,
+      22,
+      93,
+      13,
+      89
+    ],
+    "selected_names": [
+      "Audio_freq_peak_0_250_Hz",
+      "Resistance_Std",
+      "Audio_peak_100_150_Hz",
+      "Voltage_FFT_bandpower_area_1000_2000",
+      "Audio_stft_max",
+      "Voltage_FFT_highest_amp_area_1000_2000"
+    ]
+  }
+]

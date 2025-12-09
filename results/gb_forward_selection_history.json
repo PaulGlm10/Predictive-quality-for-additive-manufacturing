@@ -1,0 +1,72 @@
+[
+  {
+    "n_features": 1,
+    "score": 0.7059556224649104,
+    "selected_indices": [
+      65
+    ],
+    "selected_names": [
+      "Power_2000_5000_Std"
+    ]
+  },
+  {
+    "n_features": 2,
+    "score": 0.8939623615978105,
+    "selected_indices": [
+      65,
+      26
+    ],
+    "selected_names": [
+      "Power_2000_5000_Std",
+      "Audio_freq_peak_0_250_Hz"
+    ]
+  },
+  {
+    "n_features": 3,
+    "score": 0.9311963118580767,
+    "selected_indices": [
+      65,
+      26,
+      2
+    ],
+    "selected_names": [
+      "Power_2000_5000_Std",
+      "Audio_freq_peak_0_250_Hz",
+      "Audio_ptp_amplitude"
+    ]
+  },
+  {
+    "n_features": 4,
+    "score": 0.9440581232492997,
+    "selected_indices": [
+      65,
+      26,
+      2,
+      14
+    ],
+    "selected_names": [
+      "Power_2000_5000_Std",
+      "Audio_freq_peak_0_250_Hz",
+      "Audio_ptp_amplitude",
+      "Audio_stft_energy"
+    ]
+  },
+  {
+    "n_features": 5,
+    "score": 0.9630310457516341,
+    "selected_indices": [
+      65,
+      26,
+      2,
+      14,
+      27
+    ],
+    "selected_names": [
+      "Power_2000_5000_Std",
+      "Audio_freq_peak_0_250_Hz",
+      "Audio_ptp_amplitude",
+      "Audio_stft_energy",
+      "Audio_peak_0_250_Hz"
+    ]
+  }
+]
