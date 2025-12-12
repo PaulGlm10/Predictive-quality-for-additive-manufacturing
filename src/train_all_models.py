@@ -6,6 +6,7 @@ import json
 import os
 import numpy as np
 import matplotlib.pyplot as plt
+import pandas as pd
 from pathlib import Path
 
 from src.data_loading import load_dataset, train_test_split_stratified
@@ -45,6 +46,42 @@ def plot_feature_selection_curve(history: list, model_name: str, output_dir: str
     plt.savefig(output_path, dpi=150, bbox_inches="tight")
     plt.close()
     print(f"Saved plot to {output_path}")
+
+
+def save_results_csv(results: dict, output_dir: str = "results") -> None:
+    """Save model results to CSV file for easy access."""
+    os.makedirs(output_dir, exist_ok=True)
+    
+    # Define model configurations
+    model_configs = [
+        ("svm_baseline", "SVM", "Baseline"),
+        ("svm_selected", "SVM", "Selected"),
+        ("knn_baseline", "kNN", "Baseline"),
+        ("knn_selected", "kNN", "Selected"),
+        ("gb_baseline", "GB", "Baseline"),
+        ("gb_selected", "GB", "Selected"),
+    ]
+    
+    # Build rows for CSV
+    rows = []
+    for key, model_name, variant in model_configs:
+        if key in results:
+            r = results[key]
+            rows.append({
+                "Model": model_name,
+                "Variant": variant,
+                "Accuracy": r["accuracy"],
+                "F1_Macro": r["f1"],
+                "Precision_Macro": r["precision"],
+                "Recall_Macro": r["recall"],
+                "N_Features": r["n_features_used"]
+            })
+    
+    # Create DataFrame and save to CSV
+    df = pd.DataFrame(rows)
+    output_path = os.path.join(output_dir, "model_results.csv")
+    df.to_csv(output_path, index=False)
+    print(f"Saved results CSV to {output_path}")
 
 
 def main():
@@ -169,6 +206,9 @@ def main():
     plot_feature_selection_curve(hist_svm, "svm")
     plot_feature_selection_curve(hist_knn, "knn")
     plot_feature_selection_curve(hist_gb, "gb")
+
+    # Save results to CSV
+    save_results_csv(results)
 
     # 9. Print detailed classification reports
     print("\n[9/9] Detailed Classification Reports")
