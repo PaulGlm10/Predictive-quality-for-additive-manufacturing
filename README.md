@@ -1,4 +1,6 @@
-# PredictiveLearningProject
+## Fault classification from audio and electrical signals
+
+This project classifies 200 recordings into four classes (`iO`, `Tilt`, `offset`, `oil`) using features extracted from audio signals and from voltage, current, resistance and power signals (`All_features_New.csv`). The notebook `Project_Fault_Classification.ipynb` first sets baselines (logistic regression, KNN, random forest, gradient boosting, SVC), trained separately on the audio features and on the electrical features and tuned by grid search with 5-fold stratified cross-validation. It then trains an MLP on all features, with forward sequential feature selection and a hyperparameter search. Over 5 different train/test splits, the MLP reaches a mean test accuracy of 0.925 ± 0.035 (weighted F1 0.926). The predictions on the test set are exported to `predictions_results.csv`.
 
 ## Dataset
 
